@@ -1,0 +1,23 @@
+.bg-dark {
+  background-color: #fff !important;
+  border-bottom: #ffc107 double 4px;
+}
+
+.nav-link {
+  color: #fdb807fd !important;
+  font-weight: 500;
+}
+
+.navbar-nav > li > a:hover {
+  color: #e66018 !important;
+}
+
+.navbar-toggler {
+  color: #fdb807fd !important;
+}
+
+footer {
+  background-color: #faf3dd;
+  color: #fbb02d;
+  font-size: large;
+}
