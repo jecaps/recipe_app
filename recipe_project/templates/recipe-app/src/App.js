@@ -3,7 +3,12 @@ import "./styles.css";
 export default function App() {
   return (
     <div>
-      <nav className="navbar flex justify-between items-center px-4 bg-yellow-100 h-12">
+      {/* <img
+        src="https://images.pexels.com/photos/1435904/pexels-photo-1435904.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        className="header-img h-1/6 w-screen"
+        alt=""
+      /> */}
+      <nav className="navbar flex justify-between items-center px-4 h-12 bg-yellow-100 shadow shadow-yellow-300">
         <div className="nav--logo flex">
           <img
             src={require("./images/kanzept-logo.png")}
@@ -17,11 +22,7 @@ export default function App() {
           <p className="nav-item">Ingredients</p>
         </div>
       </nav>
-      {/* <img
-        src="https://images.pexels.com/photos/1435904/pexels-photo-1435904.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        className="header-img h-1/4"
-        alt=""
-      /> */}
+
       {/* <nav class="navbar navbar-expand-md bg-dark navbar-light  rounded-bottom fixed-top">
         <div class="container">
           <a href="#" class="navbar-brand h1 mb-0">
