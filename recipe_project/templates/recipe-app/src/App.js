@@ -3,16 +3,100 @@ import "./styles.css";
 export default function App() {
   return (
     <div>
-      <div className="header-img bg-veggies bg-cover bg-center bg-no-repeat h-60 w-screen object-cover">
-        <div className="header-overlay bg-transparent backdrop-blur-sm w-full h-full text-center p-4"></div>
-      </div>
+      <nav className="navbar navbar-expand-lg bg-light">
+        <div className="container-fluid">
+          <button
+            className="navbar-toggler border-0 p-1"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <a className="navbar-brand pl-8" href="#">
+            Kanzepts
+            <img
+              src={require("./images/kanzept-logo.png")}
+              alt=""
+              className="nav-logo mx-1"
+            ></img>
+          </a>
+          <div
+            className="collapse navbar-collapse text-center"
+            id="navbarSupportedContent"
+          >
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Recipes
+                </a>
+                <ul
+                  className="dropdown-menu p-2 text-center"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Lunch
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Dinner
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Snacks
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">
+                  Ingredients
+                </a>
+              </li>
+            </ul>
+            <form className="d-flex m-auto w-50" role="search">
+              <input
+                className="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button className="btn btn-outline-secondary" type="submit">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
 
-      <nav className="navbar flex justify-between items-center px-4 h-12 bg-yellow-100 shadow shadow-yellow-300">
+      {/* <nav className="nav navbar flex">
         <div className="nav--logo flex">
           <img
             src={require("./images/kanzept-logo.png")}
             alt=""
-            className="nav-logo w-25 h-25 self-center"
+            className="nav-logo"
           ></img>
           <h2 className="nav-logo">Kanzepts</h2>
         </div>
@@ -20,7 +104,7 @@ export default function App() {
           <p className="nav-item">Recipes</p>
           <p className="nav-item">Ingredients</p>
         </div>
-      </nav>
+      </nav> */}
 
       {/* <nav class="navbar navbar-expand-md bg-dark navbar-light  rounded-bottom fixed-top">
         <div class="container">

@@ -1,15 +1,46 @@
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap");
 
-@layer components {
-  .nav-logo,
-  .nav-item {
-    @apply mx-1 font-cursive text-yellow-800;
-  }
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
 
-  .header-overlay {
-    @apply text-yellow-400;
-  }
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  background-color: rgb(254 249 195) !important;
+}
+
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-brand {
+  font-family: "Pacifico", cursive;
+  color: rgb(133 77 14) !important;
+  width: 60%;
+}
+
+.navbar-brand:hover {
+  color: rgb(161 98 7);
+}
+
+.nav-logo {
+  width: 25%;
+  height: 25%;
+}
+
+.nav-link {
+  color: rgb(161 98 7) !important;
+}
+
+.dropdown-menu {
+  border: none;
+  background-color: #fff;
+}
+
+.dropdown-item {
+  color: #eab308 !important;
 }
