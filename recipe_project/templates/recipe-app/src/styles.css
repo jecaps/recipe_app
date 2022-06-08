@@ -8,4 +8,8 @@
   .nav-item {
     @apply mx-1 font-cursive text-yellow-800;
   }
+
+  .header-overlay {
+    @apply text-yellow-400;
+  }
 }

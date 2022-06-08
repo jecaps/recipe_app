@@ -3,11 +3,10 @@ import "./styles.css";
 export default function App() {
   return (
     <div>
-      {/* <img
-        src="https://images.pexels.com/photos/1435904/pexels-photo-1435904.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        className="header-img h-1/6 w-screen"
-        alt=""
-      /> */}
+      <div className="header-img bg-veggies bg-cover bg-center bg-no-repeat h-60 w-screen object-cover">
+        <div className="header-overlay bg-transparent backdrop-blur-sm w-full h-full text-center p-4"></div>
+      </div>
+
       <nav className="navbar flex justify-between items-center px-4 h-12 bg-yellow-100 shadow shadow-yellow-300">
         <div className="nav--logo flex">
           <img
